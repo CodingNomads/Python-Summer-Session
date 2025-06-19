@@ -19,8 +19,8 @@ Welcome to your official course repository for the **Python + SQL + APIs Intensi
 ### 1. Clone the repo 
 After accepting the email invite to join the GitHub repo:
 ```bash
-git clone https://github.com/CodingNomads/9-Week-Python-Summer-Session.git
-cd python-9-week-training
+git clone https://github.com/CodingNomads/Python-Summer-Session
+cd Python-Summer-Session
 ```
 
 ### 2. Open in VSCode
