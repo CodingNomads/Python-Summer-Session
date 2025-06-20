@@ -247,7 +247,7 @@ First:
 * Install the [Python 101 Lab Exercises](https://codingnomads.com/python-101-lab-exercises)
 
 Then, complete the following exercises: (in VSCode)
-* 04_build-something -- all exercises
-* 05_machine-setup -- all exercises
-* 06_intro-to-programming -- all exercises
-* 07_variables-and-types -- all exercises
+* 03_build-something -- all exercises
+* 04_machine-setup -- all exercises
+* 05_intro-to-programming -- all exercises
+* 06_variables-and-types -- all exercises
