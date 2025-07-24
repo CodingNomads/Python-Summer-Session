@@ -71,17 +71,18 @@ print(repr(metadata.tables['actor']))
 **Insert Data**
 
 ```python
-new_user = User(name="Pythonista")
-session.add(new_user)
+users = Table("users", metadata, autoload_with=engine)
+stmt = insert(users).values(name="Monty")
+result = session.execute(stmt)
 session.commit()
 ```
 
 **Query Data**
 
 ```python
-users = session.query(User).all()
-for user in users:
-    print(user.name)
+stmt = select(actors).where(actors.c.first_name == "BURT")
+for row in session.execute(stmt):
+  print(row)
 ```
 
 ---
