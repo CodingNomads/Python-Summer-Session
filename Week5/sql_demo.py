@@ -48,6 +48,7 @@ with Session(engine) as session:
     # Details at https://docs.sqlalchemy.org/en/21/tutorial/data_select.html
 
     stmt = select(actors).where(actors.c.first_name == "BURT")
+    print(stmt)
 
     # Executing this code results in an iterator you can use to access each
     # row of data returned
@@ -64,6 +65,7 @@ with Session(engine) as session:
     # Details at https://docs.sqlalchemy.org/en/21/tutorial/data_insert.html
 
     stmt = insert(users).values(name="Monty")
+    print(stmt)
 
     # Executing this statement returns a result, which you can inspect to
     # see how many rows were affected
@@ -85,6 +87,7 @@ with Session(engine) as session:
     # Details at https://docs.sqlalchemy.org/en/21/tutorial/data_update.html
 
     stmt = update(users).where(users.c.name == "Monty").values(name="Python")
+    print(stmt)
 
     # Executing this statement also returns a result, which you can inspect to
     # see how many rows were affected
@@ -106,6 +109,7 @@ with Session(engine) as session:
     # Details at https://docs.sqlalchemy.org/en/21/tutorial/data_update.html#the-delete-sql-expression-construct
 
     stmt = delete(users).where(users.c.name == "Python")
+    print(stmt)
 
     # Executing this statement also returns a result, which you can inspect to
     # see how many rows were affected
